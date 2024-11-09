@@ -1,6 +1,6 @@
 # libft
 
-## 42 Málaga Curriculum Project
+## 42 Project
 
 This repository contains all the files for the libft project within the main curriculum of 42 Paris. It is a custom library of useful functions in the C programming language. The repository includes the `Makefile` and the `libft.h` header file.
 
@@ -8,7 +8,7 @@ This repository contains all the files for the libft project within the main cur
 
 ## About
 
-This project is a C library of useful functions that can be reused in future projects within the 42 school curriculum. Access to this library will make the coding process for upcoming projects more efficient. The goal of rewriting these functions is to better understand them and to acquire a broad range of tools for future projects. You can find more information in the [subject here](https://www.42madrid.com/).
+This project is a C library of useful functions that can be reused in future projects within the 42 school curriculum. Access to this library will make the coding process for upcoming projects more efficient. The goal of rewriting these functions is to better understand them and to acquire a broad range of tools for future projects. You can find more information in the [subject here](https://www.42paris.com/).
 
 As stated in the subject, all files are located in the same directory.
 
