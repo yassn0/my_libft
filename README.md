@@ -19,59 +19,59 @@ The code in this repository follows the [Norminette](https://github.com/42School
 ## Index
 
 ### Functions from the `<ctype.h>` library
-- [`ft_isascii`](#ft_isascii) - Checks if a character is a 7-bit ASCII character.
-- [`ft_isalpha`](#ft_isalpha) - Checks if a character is alphabetic.
-- [`ft_isdigit`](#ft_isdigit) - Checks if a character is a decimal digit.
-- [`ft_isalnum`](#ft_isalnum) - Checks if a character is alphanumeric.
-- [`ft_isprint`](#ft_isprint) - Checks if a character is printable, including a space.
-- [`ft_tolower`](#ft_tolower) - Converts a character to lowercase.
-- [`ft_toupper`](#ft_toupper) - Converts a character to uppercase.
+- [`ft_isascii`](https://github.com/yassn0/my_libft/blob/main/ft_isascii.c) - Checks if a character is a 7-bit ASCII character.
+- [`ft_isalpha`](https://github.com/yassn0/my_libft/blob/main/ft_isalpha.c) - Checks if a character is alphabetic.
+- [`ft_isdigit`](https://github.com/yassn0/my_libft/blob/main/ft_isdigit.c) - Checks if a character is a decimal digit.
+- [`ft_isalnum`](https://github.com/yassn0/my_libft/blob/main/ft_isalnum.c) - Checks if a character is alphanumeric.
+- [`ft_isprint`](https://github.com/yassn0/my_libft/blob/main/ft_isprint.c) - Checks if a character is printable, including a space.
+- [`ft_tolower`](https://github.com/yassn0/my_libft/blob/main/ft_tolower.c) - Converts a character to lowercase.
+- [`ft_toupper`](https://github.com/yassn0/my_libft/blob/main/ft_toupper.c) - Converts a character to uppercase.
 
 ### Functions from the `<stdlib.h>` library
-- [`ft_atoi`](#ft_atoi) - Converts an ASCII string to an integer.
-- [`ft_calloc`](#ft_calloc) - Allocates space for an array and initializes it to 0.
+- [`ft_atoi`](https://github.com/yassn0/my_libft/blob/main/ft_atoi.c) - Converts an ASCII string to an integer.
+- [`ft_calloc`](https://github.com/yassn0/my_libft/blob/main/ft_calloc.c) - Allocates space for an array and initializes it to 0.
 
 ### Functions from the `<strings.h>` library
-- [`ft_bzero`](#ft_bzero) - Fills the first few bytes of an object with zeros.
-- [`ft_memset`](#ft_memset) - Fills memory with a given value.
-- [`ft_memchr`](#ft_memchr) - Finds the first occurrence of a character in a buffer.
-- [`ft_memcmp`](#ft_memcmp) - Compares the bytes in two buffers.
-- [`ft_memmove`](#ft_memmove) - Copies bytes from one buffer to another, handling overlapping memory correctly.
-- [`ft_memcpy`](#ft_memcpy) - Copies bytes from one buffer to another.
+- [`ft_bzero`](https://github.com/yassn0/my_libft/blob/main/ft_bzero.c) - Fills the first few bytes of an object with zeros.
+- [`ft_memset`](https://github.com/yassn0/my_libft/blob/main/ft_memset.c) - Fills memory with a given value.
+- [`ft_memchr`](https://github.com/yassn0/my_libft/blob/main/ft_memchr.c) - Finds the first occurrence of a character in a buffer.
+- [`ft_memcmp`](https://github.com/yassn0/my_libft/blob/main/ft_memcmp.c) - Compares the bytes in two buffers.
+- [`ft_memmove`](https://github.com/yassn0/my_libft/blob/main/ft_memmove.c) - Copies bytes from one buffer to another, handling overlapping memory correctly.
+- [`ft_memcpy`](https://github.com/yassn0/my_libft/blob/main/ft_memcpy.c) - Copies bytes from one buffer to another.
 
 ### Functions from the `<string.h>` library
-- [`ft_strlen`](#ft_strlen) - Gets the length of a string.
-- [`ft_strchr`](#ft_strchr) - Finds the first occurrence of a character in a string.
-- [`ft_strrchr`](#ft_strrchr) - Finds the last occurrence of a character in a string.
-- [`ft_strnstr`](#ft_strnstr) - Locates a substring within a string.
-- [`ft_strncmp`](#ft_strncmp) - Compares two strings up to a specified length.
-- [`ft_strdup`](#ft_strdup) - Creates a duplicate of a string using malloc.
-- [`ft_strlcpy`](#ft_strlcpy) - Copies a string with a maximum size.
-- [`ft_strlcat`](#ft_strlcat) - Concatenates a string with a maximum size.
+- [`ft_strlen`](https://github.com/yassn0/my_libft/blob/main/ft_strlen.c) - Gets the length of a string.
+- [`ft_strchr`](https://github.com/yassn0/my_libft/blob/main/ft_strchr.c) - Finds the first occurrence of a character in a string.
+- [`ft_strrchr`](https://github.com/yassn0/my_libft/blob/main/ft_strrchr.c) - Finds the last occurrence of a character in a string.
+- [`ft_strnstr`](https://github.com/yassn0/my_libft/blob/main/ft_strnstr.c) - Locates a substring within a string.
+- [`ft_strncmp`](https://github.com/yassn0/my_libft/blob/main/ft_strncmp.c) - Compares two strings up to a specified length.
+- [`ft_strdup`](https://github.com/yassn0/my_libft/blob/main/ft_strdup.c) - Creates a duplicate of a string using malloc.
+- [`ft_strlcpy`](https://github.com/yassn0/my_libft/blob/main/ft_strlcpy.c) - Copies a string with a maximum size.
+- [`ft_strlcat`](https://github.com/yassn0/my_libft/blob/main/ft_strlcat.c) - Concatenates a string with a maximum size.
 
 ### Non-standard functions
-- [`ft_itoa`](#ft_itoa) - Converts an integer to an ASCII string.
-- [`ft_substr`](#ft_substr) - Gets a substring from a string.
-- [`ft_strtrim`](#ft_strtrim) - Removes specified characters from the start and end of a string.
-- [`ft_strjoin`](#ft_strjoin) - Concatenates two strings into a new string using calloc.
-- [`ft_split`](#ft_split) - Splits a string using a specified delimiter character.
-- [`ft_strmapi`](#ft_strmapi) - Creates a new string modified by a given function.
-- [`ft_striteri`](#ft_striteri) - Modifies a string using a given function.
-- [`ft_putchar_fd`](#ft_putchar_fd) - Outputs a character to a given file descriptor.
-- [`ft_putstr_fd`](#ft_putstr_fd) - Outputs a string to a given file descriptor.
-- [`ft_putendl_fd`](#ft_putendl_fd) - Outputs a string to a given file descriptor followed by a newline.
-- [`ft_putnbr_fd`](#ft_putnbr_fd) - Outputs an integer to a given file descriptor.
+- [`ft_itoa`](https://github.com/yassn0/my_libft/blob/main/ft_itoa.c) - Converts an integer to an ASCII string.
+- [`ft_substr`](https://github.com/yassn0/my_libft/blob/main/ft_substr.c) - Gets a substring from a string.
+- [`ft_strtrim`](https://github.com/yassn0/my_libft/blob/main/ft_strtrim.c) - Removes specified characters from the start and end of a string.
+- [`ft_strjoin`](https://github.com/yassn0/my_libft/blob/main/ft_strjoin.c) - Concatenates two strings into a new string using calloc.
+- [`ft_split`](https://github.com/yassn0/my_libft/blob/main/ft_split.c) - Splits a string using a specified delimiter character.
+- [`ft_strmapi`](https://github.com/yassn0/my_libft/blob/main/ft_strmapi.c) - Creates a new string modified by a given function.
+- [`ft_striteri`](https://github.com/yassn0/my_libft/blob/main/ft_striteri.c) - Modifies a string using a given function.
+- [`ft_putchar_fd`](https://github.com/yassn0/my_libft/blob/main/ft_putchar_fd.c) - Outputs a character to a given file descriptor.
+- [`ft_putstr_fd`](https://github.com/yassn0/my_libft/blob/main/ft_putstr_fd.c) - Outputs a string to a given file descriptor.
+- [`ft_putendl_fd`](https://github.com/yassn0/my_libft/blob/main/ft_putendl_fd.c) - Outputs a string to a given file descriptor followed by a newline.
+- [`ft_putnbr_fd`](https://github.com/yassn0/my_libft/blob/main/ft_putnbr_fd.c) - Outputs an integer to a given file descriptor.
 
 ### Linked list functions (bonus)
-- [`ft_lstnew`](#ft_lstnew) - Creates a new list.
-- [`ft_lstsize`](#ft_lstsize) - Counts the elements in a list.
-- [`ft_lstlast`](#ft_lstlast) - Finds the last element in a list.
-- [`ft_lstadd_back`](#ft_lstadd_back) - Adds a new element to the end of the list.
-- [`ft_lstadd_front`](#ft_lstadd_front) - Adds a new element to the front of the list.
-- [`ft_lstdelone`](#ft_lstdelone) - Deletes an element from the list.
-- [`ft_lstclear`](#ft_lstclear) - Deletes a sequence of elements from a list starting from a specified point.
-- [`ft_lstiter`](#ft_lstiter) - Applies a function to the content of all elements in a list.
-- [`ft_lstmap`](#ft_lstmap) - Applies a function to the content of all elements in a list.
+- [`ft_lstnew_bonus`](https://github.com/yassn0/my_libft/blob/main/ft_lstnew_bonus.c) - Creates a new list.
+- [`ft_lstsize_bonus`](https://github.com/yassn0/my_libft/blob/main/ft_lstsize_bonus.c) - Counts the elements in a list.
+- [`ft_lstlast_bonus`](https://github.com/yassn0/my_libft/blob/main/ft_lstlast_bonus.c) - Finds the last element in a list.
+- [`ft_lstadd_back_bonus`](https://github.com/yassn0/my_libft/blob/main/ft_lstadd_back_bonus.c) - Adds a new element to the end of the list.
+- [`ft_lstadd_front_bonus`](https://github.com/yassn0/my_libft/blob/main/ft_lstadd_front_bonus.c) - Adds a new element to the front of the list.
+- [`ft_lstdelone_bonus`](https://github.com/yassn0/my_libft/blob/main/ft_lstdelone_bonus.c) - Deletes an element from the list.
+- [`ft_lstclear_bonus`](https://github.com/yassn0/my_libft/blob/main/ft_lstclear_bonus.c) - Deletes a sequence of elements from a list starting from a specified point.
+- [`ft_lstiter`](https://github.com/yassn0/my_libft/blob/main/ft_lstiter.c) - Applies a function to the content of all elements in a list.
+- [`ft_lstmap`](https://github.com/yassn0/my_libft/blob/main/ft_lstmap.c) - Applies a function to the content of all elements in a list.
 
 ---
 
