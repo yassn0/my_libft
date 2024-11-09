@@ -70,8 +70,8 @@ The code in this repository follows the [Norminette](https://github.com/42School
 - [`ft_lstadd_front_bonus`](https://github.com/yassn0/my_libft/blob/main/ft_lstadd_front_bonus.c) - Adds a new element to the front of the list.
 - [`ft_lstdelone_bonus`](https://github.com/yassn0/my_libft/blob/main/ft_lstdelone_bonus.c) - Deletes an element from the list.
 - [`ft_lstclear_bonus`](https://github.com/yassn0/my_libft/blob/main/ft_lstclear_bonus.c) - Deletes a sequence of elements from a list starting from a specified point.
-- [`ft_lstiter`](https://github.com/yassn0/my_libft/blob/main/ft_lstiter.c) - Applies a function to the content of all elements in a list.
-- [`ft_lstmap`](https://github.com/yassn0/my_libft/blob/main/ft_lstmap.c) - Applies a function to the content of all elements in a list.
+- [`ft_lstiter_bonus`](https://github.com/yassn0/my_libft/blob/main/ft_lstiter_bonus.c) - Applies a function to the content of all elements in a list.
+- [`ft_lstmap_bonus`](https://github.com/yassn0/my_libft/blob/main/ft_lstmap_bonus.c) - Applies a function to the content of all elements in a list.
 
 ---
 
