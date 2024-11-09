@@ -1,73 +1,116 @@
+# libft
 
-libft
+## 42 Málaga Curriculum Project
 
-    Projet du cursus de l'école 42 Málaga
+This repository contains all the files for the libft project within the main curriculum of 42 Paris. It is a custom library of useful functions in the C programming language. The repository includes the `Makefile` and the `libft.h` header file.
 
-Ce dépôt contient tous les fichiers du projet libft dans le cursus principal de l'école 42 Paris. C'est une bibliothèque personnalisée de fonctions utiles en langage C. Le dépôt inclut le Makefile et la bibliothèque libft.h.
-À propos · Index · Exigences · Instructions · Tests
-À propos
+---
 
-Ce projet est une bibliothèque C de fonctions utiles qui peuvent être utilisées dans les projets futurs du cursus de l'école 42. Avec l'accès à cette bibliothèque, le processus de codage dans les projets à venir sera plus efficace. L'objectif de réécrire ces fonctions est de mieux les comprendre et d'acquérir une large gamme d'outils pour les prochains projets. Tu peux trouver plus d'informations dans le sujet ici. Comme indiqué dans le sujet, tous les fichiers se trouvent dans le même dossier.
+## About
 
-Le code dans ce dépôt suit les règles de la Norminette.
-Index
-Fonctions de la bibliothèque <ctype.h>
+This project is a C library of useful functions that can be reused in future projects within the 42 school curriculum. Access to this library will make the coding process for upcoming projects more efficient. The goal of rewriting these functions is to better understand them and to acquire a broad range of tools for future projects. You can find more information in the [subject here](https://www.42madrid.com/).
 
-    ft_isascii - Vérifie si un caractère est un caractère ASCII 7 bits.
-    ft_isalpha - Vérifie si un caractère est alphabétique.
-    ft_isdigit - Vérifie si un caractère est un chiffre décimal.
-    ft_isalnum - Vérifie si un caractère est alphanumérique.
-    ft_isprint - Vérifie si un caractère est imprimable, y compris un espace.
-    ft_tolower - Convertit un caractère en minuscule.
-    ft_toupper - Convertit un caractère en majuscule.
+As stated in the subject, all files are located in the same directory.
 
-Fonctions de la bibliothèque <stdlib.h>
+The code in this repository follows the [Norminette](https://github.com/42School/norminette) rules.
 
-    ft_atoi - Convertit une chaîne ASCII en entier.
-    ft_calloc - Alloue de l'espace pour un tableau et l'initialise à 0.
+---
 
-Fonctions de la bibliothèque <strings.h>
+## Index
 
-    ft_bzero - Remplit les premiers octets d'un objet avec des zéros.
-    ft_memset - Remplit la mémoire avec une valeur donnée.
-    ft_memchr - Trouve la première occurrence d'un caractère dans un tampon.
-    ft_memcmp - Compare les octets dans deux tampons.
-    ft_memmove - Copie des octets d'un tampon à un autre, en gérant correctement la mémoire chevauchante.
-    ft_memcpy - Copie des octets d'un tampon à un autre.
+### Functions from the `<ctype.h>` library
+- [`ft_isascii`](#ft_isascii) - Checks if a character is a 7-bit ASCII character.
+- [`ft_isalpha`](#ft_isalpha) - Checks if a character is alphabetic.
+- [`ft_isdigit`](#ft_isdigit) - Checks if a character is a decimal digit.
+- [`ft_isalnum`](#ft_isalnum) - Checks if a character is alphanumeric.
+- [`ft_isprint`](#ft_isprint) - Checks if a character is printable, including a space.
+- [`ft_tolower`](#ft_tolower) - Converts a character to lowercase.
+- [`ft_toupper`](#ft_toupper) - Converts a character to uppercase.
 
-Fonctions de la bibliothèque <string.h>
+### Functions from the `<stdlib.h>` library
+- [`ft_atoi`](#ft_atoi) - Converts an ASCII string to an integer.
+- [`ft_calloc`](#ft_calloc) - Allocates space for an array and initializes it to 0.
 
-    ft_strlen - Obtient la longueur d'une chaîne.
-    ft_strchr - Trouve la première occurrence d'un caractère dans une chaîne.
-    ft_strrchr - Trouve la dernière occurrence d'un caractère dans une chaîne.
-    ft_strnstr - Localise une sous-chaîne dans une chaîne.
-    ft_strncmp - Compare deux chaînes, jusqu'à une longueur donnée.
-    ft_strdup - Crée un duplicata d'une chaîne avec malloc.
-    ft_strlcpy - Copie une chaîne avec une taille maximale.
-    ft_strlcat - Concatène une chaîne avec une taille maximale.
+### Functions from the `<strings.h>` library
+- [`ft_bzero`](#ft_bzero) - Fills the first few bytes of an object with zeros.
+- [`ft_memset`](#ft_memset) - Fills memory with a given value.
+- [`ft_memchr`](#ft_memchr) - Finds the first occurrence of a character in a buffer.
+- [`ft_memcmp`](#ft_memcmp) - Compares the bytes in two buffers.
+- [`ft_memmove`](#ft_memmove) - Copies bytes from one buffer to another, handling overlapping memory correctly.
+- [`ft_memcpy`](#ft_memcpy) - Copies bytes from one buffer to another.
 
-Fonctions non standard
+### Functions from the `<string.h>` library
+- [`ft_strlen`](#ft_strlen) - Gets the length of a string.
+- [`ft_strchr`](#ft_strchr) - Finds the first occurrence of a character in a string.
+- [`ft_strrchr`](#ft_strrchr) - Finds the last occurrence of a character in a string.
+- [`ft_strnstr`](#ft_strnstr) - Locates a substring within a string.
+- [`ft_strncmp`](#ft_strncmp) - Compares two strings up to a specified length.
+- [`ft_strdup`](#ft_strdup) - Creates a duplicate of a string using malloc.
+- [`ft_strlcpy`](#ft_strlcpy) - Copies a string with a maximum size.
+- [`ft_strlcat`](#ft_strlcat) - Concatenates a string with a maximum size.
 
-    ft_itoa - Convertit un entier en chaîne ASCII.
-    ft_substr - Obtient une sous-chaîne d'une chaîne.
-    ft_strtrim - Supprime les caractères de début et de fin d'une chaîne.
-    ft_strjoin - Concatène deux chaînes dans une nouvelle chaîne, en utilisant calloc.
-    ft_split - Divise une chaîne avec un caractère spécifique comme délimiteur.
-    ft_strmapi - Crée une nouvelle chaîne modifiée par une fonction donnée.
-    ft_striteri - Modifie une chaîne avec une fonction donnée.
-    ft_putchar_fd - Affiche un caractère dans un fichier donné.
-    ft_putstr_fd - Affiche une chaîne dans un fichier donné.
-    ft_putendl_fd - Affiche une chaîne dans un fichier donné avec un saut de ligne.
-    ft_putnbr_fd - Affiche un entier dans un fichier donné.
+### Non-standard functions
+- [`ft_itoa`](#ft_itoa) - Converts an integer to an ASCII string.
+- [`ft_substr`](#ft_substr) - Gets a substring from a string.
+- [`ft_strtrim`](#ft_strtrim) - Removes specified characters from the start and end of a string.
+- [`ft_strjoin`](#ft_strjoin) - Concatenates two strings into a new string using calloc.
+- [`ft_split`](#ft_split) - Splits a string using a specified delimiter character.
+- [`ft_strmapi`](#ft_strmapi) - Creates a new string modified by a given function.
+- [`ft_striteri`](#ft_striteri) - Modifies a string using a given function.
+- [`ft_putchar_fd`](#ft_putchar_fd) - Outputs a character to a given file descriptor.
+- [`ft_putstr_fd`](#ft_putstr_fd) - Outputs a string to a given file descriptor.
+- [`ft_putendl_fd`](#ft_putendl_fd) - Outputs a string to a given file descriptor followed by a newline.
+- [`ft_putnbr_fd`](#ft_putnbr_fd) - Outputs an integer to a given file descriptor.
 
-Fonctions de liste chaînée (bonus)
+### Linked list functions (bonus)
+- [`ft_lstnew`](#ft_lstnew) - Creates a new list.
+- [`ft_lstsize`](#ft_lstsize) - Counts the elements in a list.
+- [`ft_lstlast`](#ft_lstlast) - Finds the last element in a list.
+- [`ft_lstadd_back`](#ft_lstadd_back) - Adds a new element to the end of the list.
+- [`ft_lstadd_front`](#ft_lstadd_front) - Adds a new element to the front of the list.
+- [`ft_lstdelone`](#ft_lstdelone) - Deletes an element from the list.
+- [`ft_lstclear`](#ft_lstclear) - Deletes a sequence of elements from a list starting from a specified point.
+- [`ft_lstiter`](#ft_lstiter) - Applies a function to the content of all elements in a list.
+- [`ft_lstmap`](#ft_lstmap) - Applies a function to the content of all elements in a list.
 
-    ft_lstnew - Crée une nouvelle liste.
-    ft_lstsize - Compte les éléments d'une liste.
-    ft_lstlast - Trouve le dernier élément d'une liste.
-    ft_lstadd_back - Ajoute un nouvel élément à la fin de la liste.
-    ft_lstadd_front - Ajoute un nouvel élément au début de la liste.
-    ft_lstdelone - Supprime un élément de la liste.
-    ft_lstclear - Supprime une séquence d'éléments d'une liste à partir d'un point de départ.
-    ft_lstiter - Applique une fonction au contenu de tous les éléments d'une liste.
-    ft_lstmap - Applique une fonction au contenu de tous
+---
+
+## Instructions
+
+To compile the library, run the `Makefile` in the terminal:
+
+```bash
+make
+
+    
+
+To clean up object files, run:
+
+      
+
+make clean
+
+    
+
+To remove all generated files, run:
+
+      
+
+make fclean
+
+    
+
+To recompile the library and the test executable, run:
+
+      
+
+make re
+
+    
+
+Tests
+
+Non-automated tests are recommended. You can use the provided main.c file in this repository to test the various functions you have implemented.
+License
+
+This project is subject to the 42 school license. Make sure to follow the school's rules when using this code.
