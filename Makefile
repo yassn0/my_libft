@@ -67,6 +67,7 @@ $(NAME): $(OBJS)
 
 bonus : $(OBJS) $(OBJSB)
 	ar rcs $(NAME) $(OBJS) $(OBJSB)
+	ranlib $(NAME)
 	
 clean:
 	rm -f $(OBJS) $(OBJSB)
