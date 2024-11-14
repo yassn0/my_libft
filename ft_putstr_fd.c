@@ -6,18 +6,20 @@
 /*   By: yfradj <yfradj@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 17:10:07 by yfradj            #+#    #+#             */
-/*   Updated: 2024/11/09 17:08:23 by yfradj           ###   ########.fr       */
+/*   Updated: 2024/11/12 14:10:20 by yfradj           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putstr_fd(char *s, int fd)
+void	ft_putstr_fd(const char *s, int fd)
 {
 	int	i;
 
 	i = 0;
-	if (s)
-		while (s[i] != '\0')
-			write(fd, &s[i++], 1);
+	while (s[i])
+	{
+		write(fd, &s[i], 1);
+		i++;
+	}
 }

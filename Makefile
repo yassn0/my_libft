@@ -54,21 +54,18 @@ OBJS = $(SRCS:.c=.o)
 
 OBJSB = $(SRCSB:.c=.o)
 
-INCLUDES = libft.h
-
 all: $(NAME)
 
 $(NAME): $(OBJS)
 	ar rcs $(NAME) $(OBJS)
 	ranlib $(NAME)
 
-%.o: %.c $(INCLUDES)
-	$(CC) $(FLAGS) -c $< -o $@
+.c.o:
+	$(CC) $(FLAGS) -c $< -o $(<:.c=.o)
 
 bonus : $(OBJS) $(OBJSB)
-	ar rcs $(NAME) $(OBJS) $(OBJSB)
+	ar rcs $(NAME) $(OBJSB)
 	ranlib $(NAME)
-	
 clean:
 	rm -f $(OBJS) $(OBJSB)
 
